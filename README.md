@@ -31,6 +31,9 @@ Functions related to screen content drawing are placed inside the main function.
 **'Controller' device:**
 The processor never reaches the main loop, all functions are executed inside the setup() function. The device measures the analog voltage at the output of the sensor, initialises ESP NOW connection and sends the data packet. At the end of the setup() function, the device is put into 'deep sleep' mode. 
 
+**_NOTE_**
+The device was tested only using one sensor node. 
+
 ![IMG_20211209_203919](https://user-images.githubusercontent.com/68562161/145469962-c4acc326-0168-4965-b2c7-6f554707a749.jpg)
 
 ![IMG_20211209_203414](https://user-images.githubusercontent.com/68562161/145469967-2330cb6c-0a90-4940-9447-eb81f9309ff1.jpg)
