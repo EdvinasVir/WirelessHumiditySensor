@@ -9,12 +9,12 @@
 #include <HumiditySensorNode.h>
 
 #define MY_NAME   "SLAVE_NODE"
-#define SCREEN_WIDTH 128        // OLED display width, in pixels
-#define SCREEN_HEIGHT 64        // OLED display height, in pixels
-#define OLED_RESET -1           // OLED reset pin not used
-#define NUM_SENSORS_MAX 10      // up to 10 controller devices can be connected to one slave using ESP NOW
-#define NUM_SENSORS 1           // number of active controller devices
-#define PENDING_LIMIT_MS 120000 // 2 minute before the node status is set to pending
+#define SCREEN_WIDTH 128                // OLED display width, in pixels
+#define SCREEN_HEIGHT 64                // OLED display height, in pixels
+#define OLED_RESET -1                   // OLED reset pin not used
+#define NUM_SENSORS_MAX 10              // up to 10 controller devices can be connected to one slave using ESP NOW
+#define NUM_SENSORS 1                   // number of active controller devices
+#define PENDING_LIMIT_MS 15 * 60 * 1000 // 2 minute before the node status is set to pending
 
 // set the maximum number of sensors
 #if NUM_SENSORS > NUM_SENSORS_MAX 
