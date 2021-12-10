@@ -2,11 +2,11 @@
 #include<espnow.h>
 
 #define MY_NAME         "CONTROLLER_NODE"
-#define MY_ROLE         ESP_NOW_ROLE_CONTROLLER   // set the role of this device: CONTROLLER, SLAVE, COMBO
-#define RECEIVER_ROLE   ESP_NOW_ROLE_SLAVE        // set the role of the receiver
+#define MY_ROLE         ESP_NOW_ROLE_CONTROLLER       // set the role of this device: CONTROLLER, SLAVE, COMBO
+#define RECEIVER_ROLE   ESP_NOW_ROLE_SLAVE            // set the role of the receiver
 #define WIFI_CHANNEL    14
-#define MY_ID 0                                   // individual ID for each controller node
-#define SLEEP_TIME_uS 30 * 1000000                // sleep for 30 seconds
+#define MY_ID 0                                       // individual ID for each controller node
+#define SLEEP_TIME_uS 5 * 60 * 1000000                // sleep for 30 seconds
 
 uint8_t receiverAddress[] = {0xE8,0xDB,0x84,0xDB,0x61,0xA0};   // MAC address of the receiver
 
