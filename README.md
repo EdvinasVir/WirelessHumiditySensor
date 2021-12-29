@@ -4,9 +4,6 @@
 
 The device described is a wireless plant-soil humidity sensor, it consists of a single 'slave' device and up to 10 'controller' devices. A 'controller' device captures the humidity level using a sensor and sends it to the 'slave' device that normalises the data and displays it via the OLED screen. A single button was used to simplify the user interface. The ESP NOW protocol is used to connect the devices over a wireless network. Data can be sent from as far as 480 meters which makes this device suitable for plant-soil monitoring in greenhouses. Along with the captured humidity data, the 'slave' device also tracks the connection status of the 'controller' devices. The device must be calibrated before use to accurately reflect the relative humidity amount. 
 
-![IMG_20211209_203323](https://user-images.githubusercontent.com/68562161/145469727-ef667d45-2756-4d98-a8f7-de8990bd72a1.jpg)
-
-
 The 'controller' devices are designed to be powered using batteries. To save energy, the device is put into 'deep sleep' mode for 5 minutes immediately after capturing and sending the humidity sensor data. If no data is received for 15 minutes, the slave device automatically considers the connection status of the 'controller' device as pending.
 
 **External dependencies**
